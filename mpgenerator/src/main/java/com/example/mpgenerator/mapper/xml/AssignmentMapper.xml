@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mpgenerator.mapper.AssignmentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.mpgenerator.entity.Assignment">
+        <id column="id" property="id" />
+        <result column="mobile" property="mobile" />
+        <result column="uid" property="uid" />
+        <result column="vin" property="vin" />
+        <result column="package_id" property="packageId" />
+        <result column="package_name" property="packageName" />
+        <result column="status" property="status" />
+        <result column="channel" property="channel" />
+        <result column="channel_company" property="channelCompany" />
+        <result column="channel_company_code" property="channelCompanyCode" />
+        <result column="cost_center" property="costCenter" />
+        <result column="cost_center_code" property="costCenterCode" />
+        <result column="channel_region" property="channelRegion" />
+        <result column="cost_department" property="costDepartment" />
+        <result column="channel_record_id" property="channelRecordId" />
+        <result column="sell_price" property="sellPrice" />
+        <result column="sell_original_price" property="sellOriginalPrice" />
+        <result column="remark" property="remark" />
+        <result column="pay_mode" property="payMode" />
+        <result column="cost_order_code" property="costOrderCode" />
+        <result column="biz_type_desc" property="bizTypeDesc" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_by" property="createBy" />
+        <result column="update_by" property="updateBy" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        mobile, uid, vin, package_id AS packageId, package_name AS packageName, status, channel, channel_company AS channelCompany, channel_company_code AS channelCompanyCode, cost_center AS costCenter, cost_center_code AS costCenterCode, channel_region AS channelRegion, cost_department AS costDepartment, channel_record_id AS channelRecordId, sell_price AS sellPrice, sell_original_price AS sellOriginalPrice, remark, pay_mode AS payMode, cost_order_code AS costOrderCode, biz_type_desc AS bizTypeDesc, id, is_deleted AS isDeleted, create_time AS createTime, update_time AS updateTime, create_by AS createBy, update_by AS updateBy
+    </sql>
+
+</mapper>
